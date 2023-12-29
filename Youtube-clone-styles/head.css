@@ -1,0 +1,154 @@
+/*--------------------------------------------------------------------------------------------*/
+header{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white;
+    border-bottom: 1px solid grey;
+}
+/*------------------------------------------------------------------------------------------*/
+.left-content{
+    display: flex;
+    align-items: center;
+}
+/*Menu-bar*/
+.menu{
+    margin-left: 24px;
+    width: 30px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+/*Youtube-logo*/
+.logo{
+    height: 25px;
+}
+/*--------------------------------------------------------------------------------------------*/
+.middle-content{
+    margin-left: 70px;
+    margin-right: 35px;
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+}
+/*Search-bar*/
+.search-bar{
+    width: 0;
+    height: 36px;
+    flex: 1;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 2px;
+    border: 1px solid rgb(195, 192, 192);
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
+    margin-right:-1px;
+    outline: none;
+}
+/*Search-button*/
+.search-1{
+    height: 40px;
+    width: 66px;
+    border: 1px solid rgb(195, 192, 192); /*Width - Style - Color*/
+    background-color: rgb(241, 238, 238);
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+}
+.search-1 .tool,
+.voice-1 .tool,
+.icon .tool{
+    position: absolute;
+    background-color: rgba(37, 37, 37, 0.8);
+    color: white;
+    font-size: 14px;
+    padding: 10px 7px;  /*top,bottom - right,left*/
+    border-radius: 3px;
+    bottom: -45px;
+    opacity: 0;
+    transition: 0.2s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-1:hover .tool,
+.voice-1:hover .tool,
+.icon:hover .tool{
+    opacity: 1;
+}
+.search{
+    margin-top: 4px;
+    height: 24px;
+}
+/*Voice-button*/
+.voice-1{
+    position: relative;
+    height: 39px;
+    border: none;
+    border-radius: 50px;
+    margin-left: 10px;
+    background-color: rgb(241, 238, 238);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.voice{
+    height: 24px;
+}
+/*--------------------------------------------------------------------------------------------*/
+.right-content{
+    width: 225px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 24px;
+    flex-shrink: 0;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+/*Create-icon*/
+.create{
+    width: 30px;
+    position: relative;
+}
+/*Other Apps-icon*/
+.options{
+    width: 30px;
+    position: relative;
+}
+/*Notifications-icon*/
+.notify{
+    width: 30px;
+    position: relative;
+}
+.noti-no{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.number{
+    position: absolute;
+    background-color: rgb(197, 0, 0);
+    color: white;
+    border-radius: 30px;
+    font-size: 12px;
+    padding: 2px; /*Whole same padding*/
+    top: -5px;
+    right: -6px;
+}
+/*Gmail-icon*/
+.acc{
+    width: 40px;
+    border-radius: 50px;
+}
+/*--------------------------------------------------------------------------------------------*/

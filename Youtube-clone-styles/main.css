@@ -1,0 +1,86 @@
+/*--------------------------------------------------------------------------------------------*/
+/*First try*/
+/*.video-1,.video-2,.video-3,.video-4{
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}*/
+/*For Separating Image and content*/
+.content{
+    display: grid;
+    grid-template-columns: 55px 1fr;
+}
+/*For making time*/
+.thumbnail{
+    position: relative;
+}
+/*Video-Image*/
+.video-preview{
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+/*Video-Length*/
+.video-time{
+    font-size: 16px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px;
+    border-radius: 3px;
+    bottom: 25px;
+    right: 6px;
+}
+/*Subscriber-Profile*/
+.profile-pic{
+    width: 36px;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 100px;
+}
+/*Video-Info*/
+.video-title{
+    margin-top: 0px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15px;
+}
+.video-author,.video-stats{ 
+    margin-bottom: 3px;
+    font-size: 12px;
+    font-weight: 500;
+    color: grey;
+}
+/*--------------------------------------------------------------------------------------------*/
+/*Making page to increase the font size*/
+@media (max-width: 800px){
+    .video-title{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .video-author,.video-stats{
+        font-size: 14px;
+    }
+}
+@media (min-width: 801px) and (max-width: 1199px) {
+    .video-title{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .video-author,.video-stats{
+        font-size: 16px;
+    }
+}
+@media (min-width: 1200px) {
+    .video-title{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .video-author,.video-stats{
+        font-size: 16px;
+    }
+    .page{
+        padding: 71px 24px 24px 225px;
+    }
+}
+/*--------------------------------------------------------------------------------------------*/

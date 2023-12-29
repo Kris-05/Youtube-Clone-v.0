@@ -1,0 +1,40 @@
+/*--------------------------------------------------------------------------------------------*/
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+body{
+    margin: 0px;
+    font-family: Roboto, Arial;
+    background-color:  rgb(250, 250, 250);;
+}
+/*--------------------------------------------------------------------------------------------*/
+/*Making Whole Video Page Into a Grid*/
+.page{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px;
+    padding: 71px 24px 24px 120px;  /*Top - Right - Bottom -Left*/
+    background-color: rgb(250, 250, 250);
+}
+/*--------------------------------------------------------------------------------------------*/
+/*Making page to shrink to 2 or 3 or 4 videos*/
+@media (max-width: 800px) {
+    .page{
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 801px) and (max-width: 1199px){
+    .page{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 1200px) {
+    .page{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+/*--------------------------------------------------------------------------------------------*/
+
+
